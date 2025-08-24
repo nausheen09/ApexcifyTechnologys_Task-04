@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🛒 MyShop</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>🛒 <span class="linear-wipe">Welcome to Our Shop</span></h1>
+    <p>Discover the best products, essentials, and goodies, all in one place 🛒✨</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  </section>
+
+
+  <!-- Category Filter Section -->
+  <div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronic')">Electronic</button>
+    <button onclick="filterProducts('clothes')">clothes</button>
+    <button onclick="filterProducts('accessories')">accessories</button>
+  </div>
+
+  <!-- Product List -->
+  <div class="product-list" id="productList"></div>
+
+  <!-- Pagination -->
+  <div class="navigation">
+    <button onclick="prevPage()" class="button-62" role="button">⬅ Prev</button>
+    <button onclick="nextPage()" class="button-62" role="button">Next ➡</button>
+  </div>
+
+  <!--  Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="font-bold">MyShop</h2>
+      <p>The best place for your cravings & goodies </p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copy">© 2025 MyShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
